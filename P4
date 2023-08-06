@@ -1,0 +1,8 @@
+def find_length(s):
+  if s == "":
+    return 0
+    else:
+      return 1 + find_length(s[1:])
+s = "hello world"
+length = find_length(s)
+print(f"The length of the string '{s}' is {length}.")
