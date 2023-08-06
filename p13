@@ -1,0 +1,34 @@
+from datetime import datetime, timedelta 
+class Birthday Calculator:
+  def init_(self, birthday):
+    self.birthday-datetime.strptime(birthday. "AY-n-d"),date()
+
+def calculate age(self):
+  today datetime.today().date()
+  age today.year self.birthday.year
+  if (today.month, today.day) (self.birthday.month, self.birthday.day):
+  age -= 1
+  return age
+
+def calculate_time_until_next_birthday(self):
+  today datetime.today().date()
+  next birthday datetime(today.year, self.birthday month, self.birthday.day),date()
+  if next birthday < today:
+    next birthday datetime(today.year 1, self.birthday month, self.birthday.day).date()
+    
+time_until_next_birthday=next_birthday day_ today
+days=time_until_next_birthday.days
+hours, remainder divmod(time until next birthday.seconds, 3600)
+minutes, seconds. - divmod(remainder, 68)
+
+return days, hours, minutes, seconds
+
+
+birthday=input("Enter your birthday (YYYY--MM-DD):")
+calculator=BirthdayCalculator (birthday)
+
+age=calculator.calculate_age ()
+days, hours, minutes, seconds=calculator.calculate_time_until_next_birthday()
+
+print("Age:", age)
+print("Time until next birthday: [ days, () hours, () minutes, () seconds" format (days, hours, minutes, seconds)]
