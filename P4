@@ -6,3 +6,15 @@ def find_length(s):
 s = "hello world"
 length = find_length(s)
 print(f"The length of the string '{s}' is {length}.")
+
+
+
+def find_smallest(lst):
+  if len(lst) == 1:
+    return lst[0]
+  else:
+    smallest = find_smallest (lst[1:])
+    return smallest if smallest < lst[0] else lst[0]
+lst = [5, 2, 8, 1, 9, 3]
+smallest = find_smallest (lst)
+print(smallest) 
