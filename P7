@@ -1,22 +1,26 @@
 class Person:
-  def init(self, USN, Name, dob, gender):
-    self.USN = USN
-    self.Name=Name 
-    self.dob=dob
-    self.gender=gender
-    class Student(Person):
-      def __init__(self, USN, Name, dob, gender, Marks,Attendance):
-        super()._init(USN, Name, dob, gender)
-        self.Marks=Marks 
+    def __init__(self, USN, Name, dob, gender):
+        self.USN = USN
+        self.Name = Name
+        self.dob = dob
+        self.gender = gender
+
+class Student(Person):
+    def __init__(self, USN, Name, dob, gender, Marks, Attendance):
+        super().__init__(USN, Name, dob, gender)
+        self.Marks = Marks
         self.Attendance = Attendance
+
 class MarksAttendance:
     def __init__(self, Marks, Attendance):
-        self.Marks=Marks
+        self.Marks = Marks
         self.Attendance = Attendance
+
 S = Student("ILAB16CS005", "XYZ", "18-1-90", "M", 85, 98)
 print("USN:", S.USN)
 print("Name:", S.Name)
-print("Date of Birth: ", S.dob)
+print("Date of Birth:", S.dob)
 print("Gender:", S.gender)
-print("Marks: ", S.Marks) 
+print("Marks:", S.Marks)
 print("Attendance:", S.Attendance)
+
