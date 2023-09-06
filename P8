@@ -1,20 +1,25 @@
 class Rectangle:
-  def _init_(self, width, height, corner_x, corner_y):
-    self.width width
-    self.height = height
-    self.corner_x = corner_x
-    self.corner_y = corner_y
+    def __init__(self, width, height, corner_x, corner_y):
+        self.width = width
+        self.height = height
+        self.corner_x = corner_x
+        self.corner_y = corner_y
 
-def get_center(self):
-  center_x = self.corner_x + self.width/2
-  center_y= self.corner y + self.height/2
-  return center_x, center_y
+    def get_center(self):
+        center_x = self.corner_x + self.width / 2
+        center_y = self.corner_y + self.height / 2
+        return center_x, center_y
 
-def get area(self):
-  return self.width * self.height
+    def get_area(self):
+        return self.width * self.height
 
-def get perimeter(self):
-  return 2 * (self.width + self.height)
-rect = Rectangle(5, 10, 0, 0) center = rect.get_center() area rect.get_area() perimeter = rect.get_perimeter()
-print("Center:", center) print("Area:", area)
+    def get_perimeter(self):
+        return 2 * (self.width + self.height)
+
+rect = Rectangle(5, 10, 0, 0)
+center = rect.get_center()
+area = rect.get_area()
+perimeter = rect.get_perimeter()
+print("Center:", center)
+print("Area:", area)
 print("Perimeter:", perimeter)
