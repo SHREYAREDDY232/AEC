@@ -2,8 +2,8 @@ def count_strings(lst):
     count=0
     for s in lst:
         if len(s)>=2 and s[0]==s[-1]:
-            count+=1
-        return count
-strings=['shreya','car','beach']
+            count +=1
+    return count
+strings=['madam','racecar','apple','python','civic']
 count=count_strings(strings)
-print(f"there are {count} strings that meet the criteria")
+print(f"there are {count} strings meet the criteria")
