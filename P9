@@ -4,4 +4,4 @@ u=urllib.request.urlopen("https://www.redbus.in/")
 text=u.read()
 numbers=re.findall("[0-9-]{7}[0-9-]+", str(text), re.I)
 for n in numbers:
-  print(n
+  print(n)
